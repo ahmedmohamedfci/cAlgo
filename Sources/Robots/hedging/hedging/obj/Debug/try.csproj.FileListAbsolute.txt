@@ -1,0 +1,6 @@
+C:\Users\A.M.LUCIFER\Documents\cAlgo\Sources\Robots\try\try\bin\Debug\try.dll
+C:\Users\A.M.LUCIFER\Documents\cAlgo\Sources\Robots\try\try\bin\Debug\try.pdb
+C:\Users\A.M.LUCIFER\Documents\cAlgo\Sources\Robots\try\try\bin\Debug\cAlgo.API.dll
+C:\Users\A.M.LUCIFER\Documents\cAlgo\Sources\Robots\try\try\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\A.M.LUCIFER\Documents\cAlgo\Sources\Robots\try\try\obj\Debug\try.dll
+C:\Users\A.M.LUCIFER\Documents\cAlgo\Sources\Robots\try\try\obj\Debug\try.pdb

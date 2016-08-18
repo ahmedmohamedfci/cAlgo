@@ -1,0 +1,25 @@
+2016.01.12 15:30:54.809 | cAlgo started
+2016.01.12 15:31:13.288 | Logged in. Account: 9710314 (demo). Proxy: Lille-3
+2016.01.12 15:43:57.668 | Disconnected (Manually)
+2016.01.12 22:40:42.906 | cAlgo started
+2016.01.12 22:40:53.658 | Logged in. Account: 9710314 (demo). Proxy: Lille-1
+2016.01.13 00:08:16.937 | cAlgo started
+2016.01.13 00:08:32.592 | Logged in. Account: 9710314 (demo). Proxy: Lille-3
+2016.01.13 00:18:08.234 | Disconnected (Slow connection )
+2016.01.13 00:18:22.936 | Logged in. Account: 9710314 (demo). Proxy: Lille-3
+2016.01.13 00:19:16.541 | Disconnected (Slow connection )
+2016.01.13 00:19:42.162 | Logged in. Account: 9710314 (demo). Proxy: Cologne-3
+2016.01.13 00:20:20.298 | Disconnected (Slow connection )
+2016.01.13 00:20:26.715 | Logged in. Account: 9710314 (demo). Proxy: Cologne-3
+2016.01.13 00:24:36.095 | Disconnected (Slow connection )
+2016.01.13 00:24:41.004 | Logged in. Account: 9710314 (demo). Proxy: Lille-3
+2016.01.13 00:25:57.727 | Disconnected (Slow connection )
+2016.01.13 00:26:16.041 | Logged in. Account: 9710314 (demo). Proxy: Cologne-3
+2016.01.13 00:27:25.538 | Disconnected (Slow connection )
+2016.01.13 00:27:29.220 | Logged in. Account: 9710314 (demo). Proxy: Lille-3
+2016.01.13 00:30:41.929 | Disconnected (Slow connection )
+2016.01.13 00:30:49.837 | Logged in. Account: 9710314 (demo). Proxy: Lille-1
+2016.01.13 00:32:28.182 | Disconnected (Manually)
+2016.01.27 13:26:53.293 | cAlgo started
+2016.01.27 13:27:12.710 | Logged in. Account: 9710314 (demo). Proxy: Lille-3
+2016.01.27 13:37:57.535 | Disconnected (Manually)

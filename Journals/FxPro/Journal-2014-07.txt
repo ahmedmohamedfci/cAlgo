@@ -1,0 +1,10 @@
+2014.07.10 09:19:59.310 | cAlgo started
+2014.07.10 09:28:58.333 | cAlgo started
+2014.07.10 09:35:33.491 | Logged in. Account: 9525548 (demo). Proxy: Lille-3
+2014.07.10 09:36:07.322 | Disconnected (Slow connection )
+2014.07.10 09:37:01.814 | Logged in. Account: 9525548 (demo). Proxy: Lille-1
+2014.07.10 09:43:57.754 | Disconnected (Connection failed)
+2014.07.24 23:46:10.515 | cAlgo started
+2014.07.24 23:48:35.755 | Demo account 9528791 successfully created
+2014.07.24 23:48:42.239 | Logged in. Account: 9528791 (demo). Proxy: Lille-1
+2014.07.24 23:54:57.331 | Disconnected (Manually)

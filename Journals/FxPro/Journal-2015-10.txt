@@ -1,0 +1,3 @@
+2015.10.08 17:51:36.542 | cAlgo started
+2015.10.08 17:51:58.240 | Logged in. Account: 9710314 (demo). Proxy: Lille-1
+2015.10.08 19:13:30.846 | Disconnected (Manually)

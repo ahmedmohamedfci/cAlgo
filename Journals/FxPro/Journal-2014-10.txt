@@ -1,0 +1,10 @@
+2014.10.16 21:05:03.966 | cAlgo started
+2014.10.16 21:05:26.006 | Login failed (Could not connect to server, please check your internet connection)
+2014.10.16 21:05:27.435 | Login failed (Could not connect to server, please check your internet connection)
+2014.10.16 21:05:43.812 | Login failed (Could not connect to server, please check your internet connection)
+2014.10.16 21:05:55.195 | Login failed (Could not connect to server, please check your internet connection)
+2014.10.16 21:06:05.864 | Login failed (Could not connect to server, please check your internet connection)
+2014.10.16 21:06:08.299 | Login failed (Could not connect to server, please check your internet connection)
+2014.10.16 21:06:21.571 | Login failed (Could not connect to server, please check your internet connection)
+2014.10.16 21:06:39.872 | Logged in. Account: 9528791 (demo). Proxy: Cologne-3
+2014.10.16 21:11:32.888 | Disconnected (Manually)

@@ -1,0 +1,20 @@
+2015.06.03 17:09:47.313 | cAlgo started
+2015.06.03 17:10:08.890 | Login failed (Could not connect to server, please check your internet connection)
+2015.06.03 17:10:16.533 | Login failed (Could not connect to server, please check your internet connection)
+2015.06.03 17:10:19.860 | Login failed (Could not connect to server, please check your internet connection)
+2015.06.03 17:10:28.168 | Login failed (Could not connect to server, please check your internet connection)
+2015.06.03 17:10:38.530 | Login failed (Could not connect to server, please check your internet connection)
+2015.06.03 17:10:45.969 | Login failed (Could not connect to server, please check your internet connection)
+2015.06.03 17:11:01.263 | Login failed (Could not connect to server, please check your internet connection)
+2015.06.03 17:11:15.685 | Login failed (Could not connect to server, please check your internet connection)
+2015.06.03 17:11:19.989 | Login failed (Could not connect to server, please check your internet connection)
+2015.06.03 17:11:25.297 | Login failed (Could not connect to server, please check your internet connection)
+2015.06.03 17:11:27.598 | Login failed (Could not connect to server, please check your internet connection)
+2015.06.03 17:11:28.936 | Login failed (Could not connect to server, please check your internet connection)
+2015.06.03 17:11:37.247 | Login failed (Could not connect to server, please check your internet connection)
+2015.06.03 17:11:47.578 | Login failed (Could not connect to server, please check your internet connection)
+2015.06.03 17:11:53.984 | Login failed (Could not connect to server, please check your internet connection)
+2015.06.03 17:12:05.298 | Login failed (Could not connect to server, please check your internet connection)
+2015.06.17 11:31:04.758 | cAlgo started
+2015.06.17 11:31:25.604 | Logged in. Account: 9710314 (demo). Proxy: Cologne-3
+2015.06.17 11:42:32.251 | Disconnected (Manually)

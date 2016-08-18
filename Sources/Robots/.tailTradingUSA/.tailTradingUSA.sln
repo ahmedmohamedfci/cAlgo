@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = ".tailTradingUSA", ".tailTradingUSA\.tailTradingUSA.csproj", "{76848284-A7EB-4450-98F1-F7035C3D738D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76848284-A7EB-4450-98F1-F7035C3D738D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76848284-A7EB-4450-98F1-F7035C3D738D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76848284-A7EB-4450-98F1-F7035C3D738D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76848284-A7EB-4450-98F1-F7035C3D738D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
+
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = ".collectiveOsciolators", "..\..\Indicators\.collectiveOsciolators\.collectiveOsciolators\.collectiveOsciolators.csproj", "{C10C7C29-400E-4F78-97D9-C49ECC1B764C}"
+EndProject

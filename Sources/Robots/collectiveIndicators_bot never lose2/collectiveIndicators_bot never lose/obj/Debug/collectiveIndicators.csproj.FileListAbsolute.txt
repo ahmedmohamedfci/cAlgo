@@ -1,0 +1,7 @@
+﻿C:\Users\A.M.LUCIFER\Documents\cAlgo\Sources\Robots\collectiveIndicators\collectiveIndicators\bin\Debug\collectiveIndicators.dll
+C:\Users\A.M.LUCIFER\Documents\cAlgo\Sources\Robots\collectiveIndicators\collectiveIndicators\bin\Debug\collectiveIndicators.pdb
+C:\Users\A.M.LUCIFER\Documents\cAlgo\Sources\Robots\collectiveIndicators\collectiveIndicators\bin\Debug\cAlgo.API.dll
+C:\Users\A.M.LUCIFER\Documents\cAlgo\Sources\Robots\collectiveIndicators\collectiveIndicators\bin\Debug\cAlgo.API.xml
+C:\Users\A.M.LUCIFER\Documents\cAlgo\Sources\Robots\collectiveIndicators\collectiveIndicators\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\A.M.LUCIFER\Documents\cAlgo\Sources\Robots\collectiveIndicators\collectiveIndicators\obj\Debug\collectiveIndicators.dll
+C:\Users\A.M.LUCIFER\Documents\cAlgo\Sources\Robots\collectiveIndicators\collectiveIndicators\obj\Debug\collectiveIndicators.pdb

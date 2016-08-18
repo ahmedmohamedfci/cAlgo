@@ -1,0 +1,9 @@
+2014.11.30 15:27:16.339 | cAlgo started
+2014.11.30 15:27:39.242 | Login failed (Could not connect to server, please check your internet connection)
+2014.11.30 15:27:54.494 | Login failed (Could not connect to server, please check your internet connection)
+2014.11.30 15:27:57.858 | Login failed (Could not connect to server, please check your internet connection)
+2014.11.30 15:28:12.106 | Login failed (Could not connect to server, please check your internet connection)
+2014.11.30 15:28:20.390 | Login failed (Could not connect to server, please check your internet connection)
+2014.11.30 15:28:22.691 | Login failed (Could not connect to server, please check your internet connection)
+2014.11.30 15:28:31.927 | Login failed (Could not connect to server, please check your internet connection)
+2014.11.30 15:28:43.215 | Login failed (Could not connect to server, please check your internet connection)

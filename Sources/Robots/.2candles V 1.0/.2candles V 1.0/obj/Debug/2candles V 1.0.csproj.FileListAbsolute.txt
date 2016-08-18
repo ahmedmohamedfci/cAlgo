@@ -1,0 +1,6 @@
+﻿C:\Users\A.M.LUCIFER\Documents\cAlgo\Sources\Robots\2candles V 1.0\2candles V 1.0\bin\Debug\2candles V 1.0.dll
+C:\Users\A.M.LUCIFER\Documents\cAlgo\Sources\Robots\2candles V 1.0\2candles V 1.0\bin\Debug\2candles V 1.0.pdb
+C:\Users\A.M.LUCIFER\Documents\cAlgo\Sources\Robots\2candles V 1.0\2candles V 1.0\bin\Debug\cAlgo.API.dll
+C:\Users\A.M.LUCIFER\Documents\cAlgo\Sources\Robots\2candles V 1.0\2candles V 1.0\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\A.M.LUCIFER\Documents\cAlgo\Sources\Robots\2candles V 1.0\2candles V 1.0\obj\Debug\2candles V 1.0.dll
+C:\Users\A.M.LUCIFER\Documents\cAlgo\Sources\Robots\2candles V 1.0\2candles V 1.0\obj\Debug\2candles V 1.0.pdb
