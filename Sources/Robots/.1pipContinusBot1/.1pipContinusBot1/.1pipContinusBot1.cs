@@ -36,6 +36,9 @@ namespace cAlgo
 
         double lastBuyClosePips;
         double lastSellClosePips;
+        double lastBuyOpenPips;
+        double lastSellOpenPips;
+
 
         protected override void OnStart()
         {
@@ -51,6 +54,8 @@ namespace cAlgo
 
             lastSellClosePips = Symbol.Bid;
             lastBuyClosePips = Symbol.Ask;
+            lastSellOpenPips = Symbol.Bid;
+            lastBuyOpenPips = Symbol.Ask;
 
             Positions.Closed += Positions_Closed;
         }
@@ -75,18 +80,19 @@ namespace cAlgo
         protected override void OnBar()
         {
             //maybe put a logic that closes the deal if more than 3 candles passed??
+
         }
 
         protected override void OnTick()
         {
-            if (Positions.Count >= 4)
+            if (Positions.Count >= 2)
                 return;
 
-            if (buyPositions.Count < 2)
+            if (buyPositions.Count < 1)
             {
                 checkBuy();
             }
-            if (sellPositions.Count < 2)
+            if (sellPositions.Count < 1)
             {
                 checkSell();
             }
@@ -96,52 +102,73 @@ namespace cAlgo
         {
             // checkBuy last buy close & support
             //Print(lastBuyClosePips <= Symbol.Bid - distance, lastBuyClosePips >= Symbol.Bid + distance, lastBuyClosePips, Symbol.Bid + distance);
-            if (lastBuyClosePips >= Symbol.Bid - distance && lastBuyClosePips <= Symbol.Bid + distance)
+            if (Math.Abs(lastBuyOpenPips - Symbol.Ask) <= distance)
             {
-
                 return;
-
             }
 
-            //Print(Symbol.Bid, MarketSeries.High.Last(0), MarketSeries.High.Last(0) + distance);
+            bool flagPast10 = false;
             for (int i = 0; i < 10; i++)
             {
 
-//                Print(Symbol.Ask >= MarketSeries.Open.Last(i) + distance, MarketSeries.Open.Last(i) + distance, Symbol.Ask);
-                if (Symbol.Bid >= MarketSeries.High.Last(i) + distance)
-                    return;
+                //Print(Symbol.Ask >= MarketSeries.Open.Last(i) + distance, MarketSeries.Open.Last(i) + distance, Symbol.Ask);
+                if (Math.Abs(Symbol.Ask - MarketSeries.High.Last(i)) >= distance)
+                {
+                    flagPast10 = true;
+                }
             }
-
+            if (flagPast10 == false)
+                return;
 
             // check min distance between the current sell positions
-            // tradeNumber++;
-            // ts = ExecuteMarketOrder(TradeType.Buy, Symbol, volume, tradeNumber.ToString(), stopLoss, takeProfit);
-//            buyPositions.AddFirst(ts.Position);
+
+
+
+            tradeNumber++;
+            ts = ExecuteMarketOrder(TradeType.Buy, Symbol, volume, tradeNumber.ToString(), stopLoss, takeProfit);
+            buyPositions.AddFirst(ts.Position);
+            lastBuyOpenPips = ts.Position.EntryPrice;
 
         }
         public void checkSell()
         {
 
             // checkBuy last sell close & resistence
-            if (lastSellClosePips >= Symbol.Ask - distance && lastBuyClosePips <= Symbol.Ask + distance)
+            //if (lastSellClosePips >= Symbol.Ask - distance && lastBuyClosePips <= Symbol.Ask + distance)
+            //{
+            //    //    return;
+
+            //}
+
+
+            if (Math.Abs(lastSellOpenPips - Symbol.Bid) <= distance)
             {
+
                 return;
 
             }
 
+            bool flagPast10 = false;
             for (int i = 0; i < 10; i++)
             {
 
                 //Print(Symbol.Ask >= MarketSeries.Open.Last(i) + distance, MarketSeries.Open.Last(i) + distance, Symbol.Ask);
-                if (Symbol.Bid <= MarketSeries.Low.Last(i) - distance)
-                    return;
+                if (Math.Abs(Symbol.Bid - MarketSeries.Low.Last(i)) >= distance)
+                {
+                    flagPast10 = true;
+                }
             }
+            if (flagPast10 == false)
+                return;
 
             // check min distance between the current sell positions
+
+
 
             tradeNumber++;
             ts = ExecuteMarketOrder(TradeType.Sell, Symbol, volume, tradeNumber.ToString(), stopLoss, takeProfit);
             sellPositions.AddFirst(ts.Position);
+            lastSellOpenPips = ts.Position.EntryPrice;
         }
 
         protected override void OnStop()
