@@ -13,7 +13,7 @@ namespace cAlgo
 
 
 
-
+        #region parameters
         [Parameter(DefaultValue = 14)]
         public int RSIPeriod { get; set; }
 
@@ -28,9 +28,11 @@ namespace cAlgo
         public double macdLow { get; set; }
         [Parameter(DefaultValue = 26)]
         public double macdHeigh { get; set; }
-
+        #endregion
 
         [Output("Main")]
+
+        #region variables and indicators
         public IndicatorDataSeries Result { get; set; }
 
 
@@ -43,16 +45,24 @@ namespace cAlgo
         private DirectionalMovementSystem dmi;
         private WilliamsPctR william;
         private CommodityChannelIndex ccind;
+        private UltimateOscillator UO;
+
+
+
+        #endregion
+
 
         protected override void Initialize()
         {
-            rsi = Indicators.RelativeStrengthIndex(MarketSeries.Close, RSIPeriod);
-            stoch = Indicators.StochasticOscillator(stoch1, stoch2, stoch3, MovingAverageType.Simple);
+            rsi = Indicators.RelativeStrengthIndex(MarketSeries.Open, RSIPeriod);
+            stoch = Indicators.StochasticOscillator(stoch1, stoch2, stoch3, MovingAverageType.Exponential);
             macd = Indicators.MacdCrossOver(26, 12, 14);
 
             dmi = Indicators.DirectionalMovementSystem(RSIPeriod);
             william = Indicators.WilliamsPctR(RSIPeriod);
             ccind = Indicators.CommodityChannelIndex(RSIPeriod);
+
+            UO = Indicators.UltimateOscillator(10, 20, 30);
         }
 
         public override void Calculate(int index)
@@ -66,17 +76,20 @@ namespace cAlgo
             result += williams(index);
             result += cciResult(index);
 
+            //Print("{0} = {1} = {2} = {3} = {4} = {5}", result, rsiResult(index), stochRsiResult(index), ADXresult(index), williams(index), cciResult(index));
+
+
             Result[index] = result;
         }
 
         private int rsiResult(int index)
         {
 
-            if (rsi.Result[index] > 70)
+            if (rsi.Result[index] >= 60)
             {
                 return -1;
             }
-            else if (rsi.Result[index] < 30)
+            else if (rsi.Result[index] <= 40)
             {
                 return 1;
             }
@@ -92,14 +105,16 @@ namespace cAlgo
             //Print("k={0},d={1}", stoch.PercentK[index], stoch.PercentD[index]);
             //ChartObjects.DrawVerticalLine("vLine1" , index, Colors.Red, 1, LineStyle.Dots);
 
-            if (stoch.PercentD[index] < 20 && stoch.PercentK[index] < 20)
+            double average = (stoch.PercentD[index] + stoch.PercentK[index]) / 2;
+
+            if (average < 40)
             {
                 if (stoch.PercentK[index] > stoch.PercentD[index])
                 {
                     return 1;
                 }
             }
-            else if (stoch.PercentD[index] > 80 && stoch.PercentK[index] > 80)
+            else if (average > 60)
             {
                 if (stoch.PercentK[index] < stoch.PercentD[index])
                 {
@@ -146,6 +161,8 @@ namespace cAlgo
         private int macdResult(int index)
         {
             int total = 0;
+
+            //Print("{0} === {1} == {2}", macd.MACD[index], macd.Signal[index], macd.Histogram[index]);
 
             if (macd.MACD[index] > macd.Signal[index])
             {
@@ -220,6 +237,22 @@ namespace cAlgo
                 {
                     return -1;
                 }
+            }
+            return 0;
+        }
+
+
+        private int ultimateOsciResult(int index)
+        {
+            if (UO.Result[index] > 60)
+            {
+                return 1;
+
+            }
+
+            if (UO.Result[index] < 40)
+            {
+                return -1;
             }
             return 0;
         }
