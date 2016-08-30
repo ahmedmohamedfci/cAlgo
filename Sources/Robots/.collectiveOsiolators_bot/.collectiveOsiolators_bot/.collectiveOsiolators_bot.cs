@@ -71,7 +71,7 @@ namespace cAlgo
             }
             else if (result < -3)
             {
-                // ExecuteMarketOrder(TradeType.Sell, Symbol, vol, "lan", 500, 5);
+                ExecuteMarketOrder(TradeType.Sell, Symbol, vol, "lan", 500, 5);
             }
 
         }
