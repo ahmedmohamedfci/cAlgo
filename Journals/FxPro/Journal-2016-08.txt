@@ -30,3 +30,4 @@
 2016.08.30 07:46:06.098 | Demo account 9910040 successfully created
 2016.08.30 07:46:33.542 | Demo account 9910041 successfully created
 2016.08.30 12:40:23.681 | cAlgo started
+2016.08.30 17:45:29.147 | cAlgo started
